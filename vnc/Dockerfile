@@ -10,7 +10,4 @@ RUN apt-get update && \
 RUN mkdir -p ~/.vnc && x11vnc -storepasswd password ~/.vnc/passwd
 RUN bash -c 'echo "firefox" >> /.bashrc'
 
-WORKDIR /srv
-ADD . /srv
-
 EXPOSE 5900
