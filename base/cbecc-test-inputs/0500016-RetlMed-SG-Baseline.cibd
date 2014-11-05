@@ -1,0 +1,1550 @@
+RulesetFilename   "CEC 2013 NonRes.bin"  
+
+Proj   "050016RetlMed-SG-Baseline"  
+   BldgEngyModelVersion = 7
+   CreateDate = 1408480231
+   ModDate = 1415127918
+   RunDate = 1415127919
+   GeometryInpType = "Simplified"
+   ZipCode = 95715
+   ExcptCondNoClgSys = "No"
+   ExcptCondRtdCap = "No"
+   ExcptCondNarrative = "No"
+   AutoHardSize = 1
+   AutoEffInput = 1
+   AutoHardSizeAirFlowPerSqFt = 1
+   AutoHardSizeAirFlowPerTon = 400
+   DefaultDayltgCtrls = 1
+   CompType = "NewComplete"
+   SoftwareVersion = "CBECC-Com 2013-3 (653)"
+   ..
+
+Bldg   "Retail Standalone"  
+   TotStoryCnt = 1
+   AboveGrdStoryCnt = 1
+   ..
+
+Story   "BuildingStory 1"  
+   Z = 0
+   FlrToFlrHgt = 20
+   FlrToCeilingHgt = 20
+   ..
+
+Spc   "Back_Space"  
+   ThrmlZnRef = "Back_Space Thermal Zone"
+   Area = 4089.1
+   FlrToCeilingHgt = 20
+   SpcFuncDefaultsRef = "Retail Back_Space"
+   OccSchRef = "AssemblyOccupancy"
+   InfSchRef[1] = "AssemblyInfiltration"
+   IntLtgRegSchRef = "AssemblyLights"
+   RecptSchRef = "AssemblyReceptacle"
+   ProcGasSchRef = "RetailGasEquipment"
+   CommRfrgEqpSchRef = "AssemblyReceptacle"
+   SHWFluidSegRef = "SHWSupply1"
+   HotWtrHtgSchRef = "RetailHotWater"
+   ..
+
+ExtWall   "Back_Space_Wall_East"  
+   ConsAssmRef = "NACM Metal Framed Wall"
+   Area = 459.32
+   Az = 90
+   ..
+
+ExtWall   "Back_Space_Wall_North"  
+   ConsAssmRef = "NACM Metal Framed Wall"
+   Area = 3561.02
+   Az = 0
+   ..
+
+ExtWall   "Back_Space_Wall_West"  
+   ConsAssmRef = "NACM Metal Framed Wall"
+   Area = 459.32
+   Az = 270
+   ..
+
+IntWall   "Back_Space_Wall_South"  
+   AdjacentSpcRef = "Core_Retail"
+   ConsAssmRef = "NACM_Interior Wall"
+   Area = 3561.02
+   ..
+
+Roof   "Back_Space_Roof"  
+   ConsAssmRef = "NACM Roof"
+   Area = 4089.12
+   Az = 270
+   Tilt = 0
+   ..
+
+UndgrFlr   "Back_Space_Floor"  
+   ConsAssmRef = "NACM Slab Floor"
+   Area = 4089.12
+   ..
+
+Spc   "Core_Retail"  
+   ThrmlZnRef = "Core_Retail Thermal Zone"
+   Area = 17227.4
+   FlrToCeilingHgt = 20
+   SpcFuncDefaultsRef = "Retail Sales"
+   OccSchRef = "RetailOccupancy"
+   InfSchRef[1] = "RetailInfiltration"
+   IntLtgRegSchRef = "RetailLights"
+   RecptSchRef = "RetailReceptacle"
+   ProcGasSchRef = "RetailGasEquipment"
+   CommRfrgEqpSchRef = "RetailRefrigeration"
+   SHWFluidSegRef = "SHWSupply1"
+   HotWtrHtgSchRef = "RetailHotWater"
+   ..
+
+ExtWall   "Core_Retail_Wall_East_2"  
+   ConsAssmRef = "NACM Metal Framed Wall"
+   Area = 1920.6
+   Az = 90
+   ..
+
+ExtWall   "Core_Retail_Wall_West_2"  
+   ConsAssmRef = "NACM Metal Framed Wall"
+   Area = 1920.6
+   Az = 270
+   ..
+
+IntWall   "Core_Retail_Wall_East_1"  
+   AdjacentSpcRef = "Front_Retail"
+   ConsAssmRef = "NACM_Interior Wall"
+   Area = 196.85
+   ..
+
+IntWall   "Core_Retail_Wall_South_1"  
+   AdjacentSpcRef = "Point_Of_Sale"
+   ConsAssmRef = "NACM_Interior Wall"
+   Area = 1649.28
+   ..
+
+IntWall   "Core_Retail_Wall_South_2"  
+   AdjacentSpcRef = "Front_Entry"
+   ConsAssmRef = "NACM_Interior Wall"
+   Area = 262.468
+   ..
+
+IntWall   "Core_Retail_Wall_South_3"  
+   AdjacentSpcRef = "Front_Retail"
+   ConsAssmRef = "NACM_Interior Wall"
+   Area = 1649.27
+   ..
+
+IntWall   "Core_Retail_Wall_West_1"  
+   AdjacentSpcRef = "Point_Of_Sale"
+   ConsAssmRef = "NACM_Interior Wall"
+   Area = 196.85
+   ..
+
+Roof   "Core_Retail_Roof"  
+   ConsAssmRef = "NACM Roof"
+   Area = 17227.4
+   Az = 270
+   Tilt = 0
+   ..
+
+Skylt   "Skylights_r1c1"  
+   FenConsRef = "Base_AllCZ_Skylt-Gl-CurbMntU58"
+   Area = 16
+   ..
+
+Skylt   "Skylights_r1c2"  
+   FenConsRef = "Base_AllCZ_Skylt-Gl-CurbMntU58"
+   Area = 16
+   ..
+
+Skylt   "Skylights_r1c3"  
+   FenConsRef = "Base_AllCZ_Skylt-Gl-CurbMntU58"
+   Area = 16
+   ..
+
+Skylt   "Skylights_r1c4"  
+   FenConsRef = "Base_AllCZ_Skylt-Gl-CurbMntU58"
+   Area = 16
+   ..
+
+Skylt   "Skylights_r1c5"  
+   FenConsRef = "Base_AllCZ_Skylt-Gl-CurbMntU58"
+   Area = 16
+   ..
+
+Skylt   "Skylights_r2c1"  
+   FenConsRef = "Base_AllCZ_Skylt-Gl-CurbMntU58"
+   Area = 16
+   ..
+
+Skylt   "Skylights_r2c2"  
+   FenConsRef = "Base_AllCZ_Skylt-Gl-CurbMntU58"
+   Area = 16
+   ..
+
+Skylt   "Skylights_r2c3"  
+   FenConsRef = "Base_AllCZ_Skylt-Gl-CurbMntU58"
+   Area = 16
+   ..
+
+Skylt   "Skylights_r2c4"  
+   FenConsRef = "Base_AllCZ_Skylt-Gl-CurbMntU58"
+   Area = 16
+   ..
+
+Skylt   "Skylights_r2c5"  
+   FenConsRef = "Base_AllCZ_Skylt-Gl-CurbMntU58"
+   Area = 16
+   ..
+
+Skylt   "Skylights_r3c1"  
+   FenConsRef = "Base_AllCZ_Skylt-Gl-CurbMntU58"
+   Area = 16
+   ..
+
+Skylt   "Skylights_r3c2"  
+   FenConsRef = "Base_AllCZ_Skylt-Gl-CurbMntU58"
+   Area = 16
+   ..
+
+Skylt   "Skylights_r3c3"  
+   FenConsRef = "Base_AllCZ_Skylt-Gl-CurbMntU58"
+   Area = 16
+   ..
+
+Skylt   "Skylights_r3c4"  
+   FenConsRef = "Base_AllCZ_Skylt-Gl-CurbMntU58"
+   Area = 16
+   ..
+
+Skylt   "Skylights_r3c5"  
+   FenConsRef = "Base_AllCZ_Skylt-Gl-CurbMntU58"
+   Area = 16
+   ..
+
+Skylt   "Skylights_r4c1"  
+   FenConsRef = "Base_AllCZ_Skylt-Gl-CurbMntU58"
+   Area = 16
+   ..
+
+Skylt   "Skylights_r4c2"  
+   FenConsRef = "Base_AllCZ_Skylt-Gl-CurbMntU58"
+   Area = 16
+   ..
+
+Skylt   "Skylights_r4c3"  
+   FenConsRef = "Base_AllCZ_Skylt-Gl-CurbMntU58"
+   Area = 16
+   ..
+
+Skylt   "Skylights_r4c4"  
+   FenConsRef = "Base_AllCZ_Skylt-Gl-CurbMntU58"
+   Area = 16
+   ..
+
+Skylt   "Skylights_r4c5"  
+   FenConsRef = "Base_AllCZ_Skylt-Gl-CurbMntU58"
+   Area = 16
+   ..
+
+Skylt   "Sub Surface 1"  
+   FenConsRef = "Base_AllCZ_Skylt-Gl-CurbMntU58"
+   Area = 16
+   ..
+
+Skylt   "Sub Surface 10"  
+   FenConsRef = "Base_AllCZ_Skylt-Gl-CurbMntU58"
+   Area = 16
+   ..
+
+Skylt   "Sub Surface 1111"  
+   FenConsRef = "Base_AllCZ_Skylt-Gl-CurbMntU58"
+   Area = 16
+   ..
+
+Skylt   "Sub Surface 1112"  
+   FenConsRef = "Base_AllCZ_Skylt-Gl-CurbMntU58"
+   Area = 16
+   ..
+
+Skylt   "Sub Surface 2"  
+   FenConsRef = "Base_AllCZ_Skylt-Gl-CurbMntU58"
+   Area = 16
+   ..
+
+Skylt   "Sub Surface 3"  
+   FenConsRef = "Base_AllCZ_Skylt-Gl-CurbMntU58"
+   Area = 16
+   ..
+
+Skylt   "Sub Surface 4"  
+   FenConsRef = "Base_AllCZ_Skylt-Gl-CurbMntU58"
+   Area = 16
+   ..
+
+Skylt   "Sub Surface 5"  
+   FenConsRef = "Base_AllCZ_Skylt-Gl-CurbMntU58"
+   Area = 16
+   ..
+
+Skylt   "Sub Surface 6"  
+   FenConsRef = "Base_AllCZ_Skylt-Gl-CurbMntU58"
+   Area = 16
+   ..
+
+Skylt   "Sub Surface 7"  
+   FenConsRef = "Base_AllCZ_Skylt-Gl-CurbMntU58"
+   Area = 16
+   ..
+
+Skylt   "Sub Surface 8"  
+   FenConsRef = "Base_AllCZ_Skylt-Gl-CurbMntU58"
+   Area = 16
+   ..
+
+Skylt   "Sub Surface 9"  
+   FenConsRef = "Base_AllCZ_Skylt-Gl-CurbMntU58"
+   Area = 16
+   ..
+
+UndgrFlr   "Core_Retail_Floor"  
+   ConsAssmRef = "NACM Slab Floor"
+   Area = 17227.4
+   ..
+
+Spc   "Front_Entry"  
+   CondgType = "Unconditioned"
+   ThrmlZnRef = "Front_Entry Thermal Zone"
+   Area = 129.2
+   SpcFuncDefaultsRef = "Retail, Main Entry"
+   InfSchRef[1] = "AssemblyInfiltration"
+   RecptPwrDens = 0
+   SHWFluidSegRef = "SHWSupply1"
+   ..
+
+ExtWall   "Front_Entry_Wall_South"  
+   ConsAssmRef = "NACM Metal Framed Wall"
+   Area = 262.468
+   Az = 180
+   ..
+
+Win   "Front_Entry_Wall_South_Glazing"  
+   FenConsRef = "Base_AllCZ_FixedWindowU36"
+   Area = 84.282
+   ..
+
+IntWall   "Front_Entry_Wall_East"  
+   AdjacentSpcRef = "Front_Retail"
+   ConsAssmRef = "NACM_Interior Wall"
+   Area = 196.85
+   ..
+
+IntWall   "Front_Entry_Wall_West"  
+   AdjacentSpcRef = "Point_Of_Sale"
+   ConsAssmRef = "NACM_Interior Wall"
+   Area = 196.85
+   ..
+
+Roof   "Front_Entry_Roof"  
+   ConsAssmRef = "NACM Roof"
+   Area = 129.167
+   Az = 270
+   Tilt = 0
+   ..
+
+UndgrFlr   "Front_Entry_Floor"  
+   ConsAssmRef = "NACM Slab Floor"
+   Area = 129.167
+   ..
+
+Spc   "Front_Retail"  
+   ThrmlZnRef = "Front_Retail Thermal Zone"
+   Area = 1623.3
+   SpcFuncDefaultsRef = "Retail Sales"
+   OccSchRef = "RetailOccupancy"
+   InfSchRef[1] = "RetailInfiltration"
+   IntLtgRegSchRef = "RetailLights"
+   RecptSchRef = "RetailReceptacle"
+   ProcGasSchRef = "RetailGasEquipment"
+   CommRfrgEqpSchRef = "RetailRefrigeration"
+   SHWFluidSegRef = "SHWSupply1"
+   HotWtrHtgSchRef = "RetailHotWater"
+   ..
+
+ExtWall   "Front_Retail_Walll_East"  
+   ConsAssmRef = "NACM Metal Framed Wall"
+   Area = 393.7
+   Az = 90
+   ..
+
+ExtWall   "Front_Retail_Wall_South"  
+   ConsAssmRef = "NACM Metal Framed Wall"
+   Area = 1649.27
+   Az = 180
+   ..
+
+Win   "Front_Retail_Wall_South_Glazing"  
+   FenConsRef = "Base_AllCZ_FixedWindowU36"
+   Area = 409.6
+   ..
+
+Roof   "Front_Retail_Roof"  
+   ConsAssmRef = "NACM Roof"
+   Area = 1623.3
+   Az = 270
+   Tilt = 0
+   ..
+
+UndgrFlr   "Front_Retail_Floor"  
+   ConsAssmRef = "NACM Slab Floor"
+   Area = 1623.3
+   ..
+
+Spc   "Point_Of_Sale"  
+   ThrmlZnRef = "Point_Of_Sale Thermal Zone"
+   Area = 1623.3
+   SpcFuncDefaultsRef = "Retail Sales"
+   OccSchRef = "RetailOccupancy"
+   InfSchRef[1] = "RetailInfiltration"
+   IntLtgRegSchRef = "RetailLights"
+   RecptSchRef = "RetailReceptacle"
+   ProcGasSchRef = "RetailGasEquipment"
+   CommRfrgEqpSchRef = "RetailRefrigeration"
+   SHWFluidSegRef = "SHWSupply1"
+   HotWtrHtgSchRef = "RetailHotWater"
+   ..
+
+ExtWall   "Point_Of_Sale_Wall_South"  
+   ConsAssmRef = "NACM Metal Framed Wall"
+   Area = 1649.28
+   Az = 180
+   ..
+
+Win   "Point_Of_Sale_Wall_South_Glazing"  
+   FenConsRef = "Base_AllCZ_FixedWindowU36"
+   Area = 409.601
+   ..
+
+ExtWall   "Point_Of_Sale_Wall_West"  
+   ConsAssmRef = "NACM Metal Framed Wall"
+   Area = 393.7
+   Az = 270
+   ..
+
+Roof   "Point_Of_Sale_Roof"  
+   ConsAssmRef = "NACM Roof"
+   Area = 1623.3
+   Az = 270
+   Tilt = 0
+   ..
+
+UndgrFlr   "Point_Of_Sale_Floor"  
+   ConsAssmRef = "NACM Slab Floor"
+   Area = 1623.3
+   ..
+
+ThrmlZn   "Back_Space Thermal Zone"  
+   PriAirCondgSysRef = "BackSpace_AirSys_PSZ-AC:1"
+   ClgTstatSchRef = "AssemblyCooling"
+   HtgTstatSchRef = "AssemblyHeating"
+   VentCtrlMthd = "CO2Sensors"
+   ..
+
+ThrmlZn   "Core_Retail Thermal Zone"  
+   PriAirCondgSysRef = "CoreRetail_AirSys_PSZ-AC:5"
+   ClgTstatSchRef = "RetailCooling"
+   HtgTstatSchRef = "RetailHeating"
+   VentCtrlMthd = "CO2Sensors"
+   ..
+
+ThrmlZn   "Front_Retail Thermal Zone"  
+   Type = "Conditioned"
+   PriAirCondgSysRef = "FrontRetail_AirSys_PSZ-AC:4"
+   ClgTstatSchRef = "RetailCooling"
+   HtgTstatSchRef = "RetailHeating"
+   VentCtrlMthd = "CO2Sensors"
+   ..
+
+ThrmlZn   "Point_Of_Sale Thermal Zone"  
+   PriAirCondgSysRef = "PointOfSale_AirSys_PSZ-AC:3"
+   ClgTstatSchRef = "RetailCooling"
+   HtgTstatSchRef = "RetailHeating"
+   VentCtrlMthd = "CO2Sensors"
+   ..
+
+AirSys   "BackSpace_AirSys_PSZ-AC:1"  
+   Type = "SZAC"
+   CtrlSysType = "DDCToZone"
+   CtrlZnRef = "Back_Space Thermal Zone"
+   AvailSchRef = "RetailHVACAvail"
+   NightCycleFanCtrl = "CycleOnCallPrimaryZone"
+   ReheatCtrlMthd = "DualMaximum"
+   ClgCtrl = "NoSATControl"
+   ..
+
+AirSeg   "BackSpaceSys_SupAirSeg"  
+   Type = "Supply"
+   Path = "Ducted"
+   ..
+
+CoilClg   "BackSpaceZn_CoolingCoil"  
+   Type = "DirectExpansion"
+   DXEER = 11.2
+   ..
+
+CoilHtg   "BackSpaceZn_HeatingCoil"  
+   Type = "Furnace"
+   FluidFlowRtDsgn = 28.5
+   FurnThrmlEff = 0.82
+   ..
+
+Fan   "BackSpaceZnSupplyFan"  
+   CtrlMthd = "ConstantVolume"
+   FlowMin = 10954
+   FlowEff = 0.56
+   TotStaticPress = 2.5
+   MtrEff = 0.865
+   ..
+
+AirSeg   "BaseSys5 RetAirSeg"  
+   Type = "Return"
+   ..
+
+OACtrl   "BaseSys5 OACtrl"  
+   EconoCtrlMthd = "DifferentialDryBulb"
+   EconoIntegration = "Integrated"
+   AirSegSupRef = "BackSpaceSys_SupAirSeg"
+   AirSegRetRef = "BaseSys5 RetAirSeg"
+   ..
+
+TrmlUnit   "BaseVAVTrmlUnit"  
+   Type = "Uncontrolled"
+   ZnServedRef = "Back_Space Thermal Zone"
+   PriAirSegRef = "BackSpaceSys_SupAirSeg"
+   ..
+
+ThrmlZn   "Front_Entry Thermal Zone"  
+   Type = "Unconditioned"
+   ..
+
+AirSys   "PointOfSale_AirSys_PSZ-AC:3"  
+   Type = "SZAC"
+   CtrlZnRef = "Point_Of_Sale Thermal Zone"
+   AvailSchRef = "RetailHVACAvail"
+   NightCycleFanCtrl = "CycleOnCallPrimaryZone"
+   ..
+
+AirSeg   "PointOfSaleSys_SupAirSeg"  
+   Type = "Supply"
+   ..
+
+CoilClg   "PointOfSaleZn_CoolingCoil"  
+   Type = "DirectExpansion"
+   DXEER = 11.2
+   ..
+
+CoilHtg   "PointOfSaleZn_HeatingCoil"  
+   Type = "Furnace"
+   FurnThrmlEff = 0.82
+   ..
+
+Fan   "PointOfSaleZnSupplyFan"  
+   FlowEff = 0.56
+   TotStaticPress = 2.5
+   MtrEff = 0.865
+   ..
+
+AirSeg   "PointOfSaleSys_RetAirSeg"  
+   Type = "Return"
+   ..
+
+TrmlUnit   "PointOfSaleSys_TU"  
+   Type = "Uncontrolled"
+   ZnServedRef = "Point_Of_Sale Thermal Zone"
+   PriAirSegRef = "PointOfSaleSys_SupAirSeg"
+   ..
+
+OACtrl   "PointOfSale_OACtrl"  
+   EconoCtrlMthd = "DifferentialDryBulb"
+   EconoIntegration = "Integrated"
+   AirSegSupRef = "PointOfSaleSys_SupAirSeg"
+   AirSegRetRef = "PointOfSaleSys_RetAirSeg"
+   ..
+
+AirSys   "FrontRetail_AirSys_PSZ-AC:4"  
+   Type = "SZAC"
+   CtrlZnRef = "Front_Retail Thermal Zone"
+   AvailSchRef = "RetailHVACAvail"
+   NightCycleFanCtrl = "CycleOnCallPrimaryZone"
+   ..
+
+AirSeg   "FrontRetailSys_SupAirSeg"  
+   Type = "Supply"
+   ..
+
+CoilClg   "FrontRetailZn_CoolingCoil"  
+   Type = "DirectExpansion"
+   DXEER = 11.2
+   ..
+
+CoilHtg   "FrontRetailZn_HeatingCoil"  
+   Type = "Furnace"
+   FurnThrmlEff = 0.82
+   ..
+
+Fan   "FrontRetailZnSupplyFan"  
+   FlowEff = 0.56
+   TotStaticPress = 2.5
+   MtrEff = 0.865
+   ..
+
+AirSeg   "FrontRetailSys_RetAirSeg"  
+   Type = "Return"
+   ..
+
+TrmlUnit   "FrontRetailSys_TU"  
+   Type = "Uncontrolled"
+   ZnServedRef = "Front_Retail Thermal Zone"
+   PriAirSegRef = "FrontRetailSys_SupAirSeg"
+   ..
+
+OACtrl   "FrontRetail_OACtrl"  
+   EconoCtrlMthd = "DifferentialDryBulb"
+   EconoIntegration = "Integrated"
+   AirSegSupRef = "FrontRetailSys_SupAirSeg"
+   AirSegRetRef = "FrontRetailSys_RetAirSeg"
+   ..
+
+AirSys   "CoreRetail_AirSys_PSZ-AC:5"  
+   Type = "SZAC"
+   CtrlZnRef = "Core_Retail Thermal Zone"
+   AvailSchRef = "RetailHVACAvail"
+   NightCycleFanCtrl = "CycleOnCallPrimaryZone"
+   ..
+
+AirSeg   "CoreRetailSys_SupAirSeg"  
+   Type = "Supply"
+   ..
+
+CoilClg   "CoreRetailZn_CoolingCoil"  
+   Type = "DirectExpansion"
+   DXSEER = 0
+   DXEER = 11.2
+   ..
+
+CoilHtg   "CoreRetailZn_HeatingCoil"  
+   Type = "Furnace"
+   FurnThrmlEff = 0.82
+   ..
+
+Fan   "CoreRetailZnSupplyFan"  
+   FlowEff = 0.56
+   TotStaticPress = 2.5
+   MtrEff = 0.865
+   ..
+
+AirSeg   "CoreRetailSys_RetAirSeg"  
+   Type = "Return"
+   ..
+
+TrmlUnit   "CoreRetailSys_TU"  
+   Type = "Uncontrolled"
+   ZnServedRef = "Core_Retail Thermal Zone"
+   PriAirSegRef = "CoreRetailSys_SupAirSeg"
+   ..
+
+OACtrl   "CoreRetail_OACtrl"  
+   EconoCtrlMthd = "DifferentialDryBulb"
+   EconoIntegration = "Integrated"
+   AirSegSupRef = "CoreRetailSys_SupAirSeg"
+   AirSegRetRef = "CoreRetailSys_RetAirSeg"
+   ..
+
+SpcFuncDefaults   "Retail Back_Space"  
+   SpcFunc = "Commercial and Industrial Storage Areas (conditioned or unconditioned)"
+   ..
+
+SpcFuncDefaults   "Retail Sales"  
+   SpcFunc = "Retail Merchandise Sales, Wholesale Showroom"
+   ..
+
+Sch   "AssemblyOccupancy"  
+   Type = "Fraction"
+   EndMonth[1] = 12
+   EndDay[1] = 31
+   SchWeekRef[1] = "AssemblyOccupancyWk"
+   ..
+
+SchWeek   "AssemblyOccupancyWk"  
+   Type = "Fraction"
+   SchDaySunRef = "AssemblyOccupancySun"
+   SchDayMonRef = "AssemblyOccupancyWD"
+   SchDayTueRef = "AssemblyOccupancyWD"
+   SchDayWedRef = "AssemblyOccupancyWD"
+   SchDayThuRef = "AssemblyOccupancyWD"
+   SchDayFriRef = "AssemblyOccupancyWD"
+   SchDaySatRef = "AssemblyOccupancySat"
+   SchDayHolRef = "AssemblyOccupancySun"
+   SchDayClgDDRef = "OnDay"
+   SchDayHtgDDRef = "OffDay"
+   ..
+
+SchDay   "AssemblyOccupancySun"  
+   Type = "Fraction"
+   Hr = ( 0, 0, 0, 0, 0, 0, 0, 0, 0.1, 0.1, 0.1, 0.1, 0.1, 0.7, 0.7, 0.7, 
+          0.7, 0.7, 0.7, 0.7, 0.7, 0.7, 0.2, 0 )
+   ..
+
+SchDay   "AssemblyOccupancyWD"  
+   Type = "Fraction"
+   Hr = ( 0, 0, 0, 0, 0, 0, 0, 0, 0.2, 0.2, 0.2, 0.8, 0.8, 0.8, 0.8, 0.8, 
+          0.8, 0.8, 0.2, 0.2, 0.2, 0.2, 0.1, 0 )
+   ..
+
+SchDay   "AssemblyOccupancySat"  
+   Type = "Fraction"
+   Hr = ( 0, 0, 0, 0, 0, 0, 0, 0, 0.2, 0.2, 0.2, 0.6, 0.6, 0.6, 0.6, 0.6, 
+          0.6, 0.6, 0.6, 0.6, 0.6, 0.8, 0.1, 0 )
+   ..
+
+SchDay   "OnDay"  
+   Type = "Fraction"
+   Hr = ( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+          1, 1, 1 )
+   ..
+
+SchDay   "OffDay"  
+   Type = "Fraction"
+   Hr = ( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+          0, 0, 0 )
+   ..
+
+Sch   "RetailHotWater"  
+   Type = "Fraction"
+   EndMonth[1] = 12
+   EndDay[1] = 31
+   SchWeekRef[1] = "RetailHotWaterWk"
+   ..
+
+SchWeek   "RetailHotWaterWk"  
+   Type = "Fraction"
+   SchDaySunRef = "RetailHotWaterSun"
+   SchDayMonRef = "RetailHotWaterWD"
+   SchDaySatRef = "RetailHotWaterSat"
+   SchDayHtgDDRef = "RetailHotWaterSat"
+   ..
+
+SchDay   "RetailHotWaterSun"  
+   Type = "Fraction"
+   Hr = ( 0.07, 0.07, 0.07, 0.06, 0.06, 0.06, 0.07, 0.1, 0.12, 0.14, 
+          0.29, 0.31, 0.36, 0.36, 0.34, 0.35, 0.37, 0.34, 0.25, 0.27, 
+          0.21, 0.16, 0.1, 0.06 )
+   ..
+
+SchDay   "RetailHotWaterWD"  
+   Type = "Fraction"
+   Hr = ( 0.04, 0.05, 0.05, 0.04, 0.04, 0.04, 0.04, 0.15, 0.23, 0.32, 
+          0.41, 0.57, 0.62, 0.61, 0.5, 0.45, 0.46, 0.47, 0.42, 0.34, 
+          0.33, 0.23, 0.13, 0.08 )
+   ..
+
+SchDay   "RetailHotWaterSat"  
+   Hr = ( 0.11, 0.1, 0.08, 0.06, 0.06, 0.06, 0.07, 0.2, 0.2, 0.24, 0.42, 
+          0.54, 0.59, 0.6, 0.49, 0.48, 0.47, 0.46, 0.44, 0.36, 0.29, 
+          0.22, 0.16, 0.13 )
+   ..
+
+Sch   "AssemblyLights"  
+   Type = "Fraction"
+   EndMonth[1] = 12
+   EndDay[1] = 31
+   SchWeekRef[1] = "AssemblyLightsWk"
+   ..
+
+SchWeek   "AssemblyLightsWk"  
+   Type = "Fraction"
+   SchDaySunRef = "AssemblyLightsSun"
+   SchDayMonRef = "AssemblyLightsWD"
+   SchDayTueRef = "AssemblyLightsWD"
+   SchDayWedRef = "AssemblyLightsWD"
+   SchDayThuRef = "AssemblyLightsWD"
+   SchDayFriRef = "AssemblyLightsWD"
+   SchDaySatRef = "AssemblyLightsSat"
+   SchDayHolRef = "AssemblyLightsSun"
+   SchDayClgDDRef = "OnDay"
+   SchDayHtgDDRef = "OffDay"
+   ..
+
+SchDay   "AssemblyLightsSun"  
+   Type = "Fraction"
+   Hr = ( 0.05, 0.05, 0.05, 0.05, 0.05, 0.05, 0.05, 0.3, 0.3, 0.3, 0.3, 
+          0.3, 0.55, 0.55, 0.55, 0.55, 0.55, 0.55, 0.55, 0.55, 0.55, 
+          0.55, 0.05, 0.05 )
+   ..
+
+SchDay   "AssemblyLightsWD"  
+   Type = "Fraction"
+   Hr = ( 0.05, 0.05, 0.05, 0.05, 0.05, 0.05, 0.35, 0.35, 0.35, 0.65, 
+          0.65, 0.65, 0.65, 0.65, 0.65, 0.65, 0.65, 0.65, 0.65, 0.65, 
+          0.65, 0.65, 0.25, 0.05 )
+   ..
+
+SchDay   "AssemblyLightsSat"  
+   Type = "Fraction"
+   Hr = ( 0.05, 0.05, 0.05, 0.05, 0.05, 0.05, 0.05, 0.3, 0.3, 0.4, 0.4, 
+          0.4, 0.4, 0.4, 0.4, 0.4, 0.4, 0.4, 0.4, 0.4, 0.4, 0.4, 0.4, 
+          0.05 )
+   ..
+
+Sch   "AssemblyReceptacle"  
+   Type = "Fraction"
+   EndMonth[1] = 12
+   EndDay[1] = 31
+   SchWeekRef[1] = "AssemblyReceptacleWk"
+   ..
+
+SchWeek   "AssemblyReceptacleWk"  
+   Type = "Fraction"
+   SchDaySunRef = "AssemblyReceptacleSun"
+   SchDayMonRef = "AssemblyReceptacleWD"
+   SchDayTueRef = "AssemblyReceptacleWD"
+   SchDayWedRef = "AssemblyReceptacleWD"
+   SchDayThuRef = "AssemblyReceptacleWD"
+   SchDayFriRef = "AssemblyReceptacleWD"
+   SchDaySatRef = "AssemblyReceptacleSat"
+   SchDayHolRef = "AssemblyReceptacleSun"
+   SchDayClgDDRef = "OnDay"
+   SchDayHtgDDRef = "OffDay"
+   ..
+
+SchDay   "AssemblyReceptacleSun"  
+   Type = "Fraction"
+   Hr = ( 0.05, 0.05, 0.05, 0.05, 0.05, 0.05, 0.05, 0.3, 0.3, 0.3, 0.3, 
+          0.3, 0.65, 0.65, 0.65, 0.65, 0.65, 0.65, 0.65, 0.65, 0.65, 
+          0.65, 0.05, 0.05 )
+   ..
+
+SchDay   "AssemblyReceptacleWD"  
+   Type = "Fraction"
+   Hr = ( 0.05, 0.05, 0.05, 0.05, 0.05, 0.05, 0.4, 0.4, 0.4, 0.75, 0.75, 
+          0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75, 
+          0.75, 0.25, 0.05 )
+   ..
+
+SchDay   "AssemblyReceptacleSat"  
+   Type = "Fraction"
+   Hr = ( 0.05, 0.05, 0.05, 0.05, 0.05, 0.05, 0.05, 0.3, 0.3, 0.5, 0.5, 
+          0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 
+          0.05 )
+   ..
+
+Sch   "RetailGasEquipment"  
+   Type = "Fraction"
+   EndMonth[1] = 12
+   EndDay[1] = 31
+   SchWeekRef[1] = "RetailGasEquipmentWk"
+   ..
+
+SchWeek   "RetailGasEquipmentWk"  
+   Type = "Fraction"
+   SchDaySunRef = "RetailGasEquipmentSun"
+   SchDayMonRef = "RetailGasEquipmentWD"
+   SchDaySatRef = "RetailGasEquipmentSat"
+   SchDayClgDDRef = "OnDay"
+   SchDayHtgDDRef = "OffDay"
+   ..
+
+SchDay   "RetailGasEquipmentSun"  
+   Type = "Fraction"
+   Hr = ( 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 
+          0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9 )
+   ..
+
+SchDay   "RetailGasEquipmentWD"  
+   Type = "Fraction"
+   Hr = ( 0, 0, 0, 0, 0, 0, 0, 0.5, 0.5, 0.75, 0.9, 0.9, 0.9, 0.75, 0.75, 
+          0.9, 0.9, 0.9, 0.75, 0.5, 0.5, 0, 0, 0 )
+   ..
+
+SchDay   "RetailGasEquipmentSat"  
+   Type = "Fraction"
+   Hr = ( 0, 0, 0, 0, 0, 0, 0, 0.5, 0.5, 0.75, 0.9, 0.9, 0.9, 0.75, 0.75, 
+          0.9, 0.9, 0.9, 0.75, 0.5, 0.5, 0, 0, 0 )
+   ..
+
+Sch   "RetailOccupancy"  
+   Type = "Fraction"
+   EndMonth[1] = 12
+   EndDay[1] = 31
+   SchWeekRef[1] = "RetailOccupancyWk"
+   ..
+
+SchWeek   "RetailOccupancyWk"  
+   Type = "Fraction"
+   SchDaySunRef = "RetailOccupancySun"
+   SchDayMonRef = "RetailOccupancyWD"
+   SchDayTueRef = "RetailOccupancyWD"
+   SchDayWedRef = "RetailOccupancyWD"
+   SchDayThuRef = "RetailOccupancyWD"
+   SchDayFriRef = "RetailOccupancyWD"
+   SchDaySatRef = "RetailOccupancySat"
+   SchDayHolRef = "RetailOccupancySun"
+   SchDayClgDDRef = "OnDay"
+   SchDayHtgDDRef = "OffDay"
+   ..
+
+SchDay   "RetailOccupancySun"  
+   Type = "Fraction"
+   Hr = ( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.1, 0.2, 0.2, 0.4, 0.4, 0.4, 0.4, 
+          0.4, 0.2, 0.1, 0, 0, 0, 0, 0 )
+   ..
+
+SchDay   "RetailOccupancyWD"  
+   Type = "Fraction"
+   Hr = ( 0, 0, 0, 0, 0, 0, 0, 0.1, 0.2, 0.5, 0.5, 0.7, 0.7, 0.7, 0.7, 
+          0.8, 0.7, 0.5, 0.5, 0.3, 0.3, 0, 0, 0 )
+   ..
+
+SchDay   "RetailOccupancySat"  
+   Type = "Fraction"
+   Hr = ( 0, 0, 0, 0, 0, 0, 0, 0.1, 0.2, 0.5, 0.6, 0.8, 0.8, 0.8, 0.8, 
+          0.8, 0.8, 0.6, 0.2, 0.2, 0.2, 0.1, 0, 0 )
+   ..
+
+Sch   "RetailLights"  
+   Type = "Fraction"
+   EndMonth[1] = 12
+   EndDay[1] = 31
+   SchWeekRef[1] = "RetailLightsWk"
+   ..
+
+SchWeek   "RetailLightsWk"  
+   Type = "Fraction"
+   SchDaySunRef = "RetailLightsSun"
+   SchDayMonRef = "RetailLightsWD"
+   SchDayTueRef = "RetailLightsWD"
+   SchDayWedRef = "RetailLightsWD"
+   SchDayThuRef = "RetailLightsWD"
+   SchDayFriRef = "RetailLightsWD"
+   SchDaySatRef = "RetailLightsSat"
+   SchDayHolRef = "RetailLightsSun"
+   SchDayClgDDRef = "OnDay"
+   SchDayHtgDDRef = "OffDay"
+   ..
+
+SchDay   "RetailLightsSun"  
+   Type = "Fraction"
+   Hr = ( 0.05, 0.05, 0.05, 0.05, 0.05, 0.05, 0.05, 0.05, 0.1, 0.1, 0.4, 
+          0.4, 0.55, 0.55, 0.55, 0.55, 0.55, 0.4, 0.2, 0.05, 0.05, 0.05, 
+          0.05, 0.05 )
+   ..
+
+SchDay   "RetailLightsWD"  
+   Type = "Fraction"
+   Hr = ( 0.05, 0.05, 0.05, 0.05, 0.05, 0.05, 0.05, 0.2, 0.5, 0.85, 0.85, 
+          0.85, 0.85, 0.85, 0.85, 0.85, 0.85, 0.85, 0.55, 0.55, 0.5, 0.2, 
+          0.05, 0.05 )
+   ..
+
+SchDay   "RetailLightsSat"  
+   Type = "Fraction"
+   Hr = ( 0.05, 0.05, 0.05, 0.05, 0.05, 0.05, 0.05, 0.1, 0.3, 0.55, 0.85, 
+          0.85, 0.85, 0.85, 0.85, 0.85, 0.85, 0.85, 0.5, 0.3, 0.3, 0.1, 
+          0.05, 0.05 )
+   ..
+
+Sch   "RetailReceptacle"  
+   Type = "Fraction"
+   EndMonth[1] = 12
+   EndDay[1] = 31
+   SchWeekRef[1] = "RetailReceptacleWk"
+   ..
+
+SchWeek   "RetailReceptacleWk"  
+   Type = "Fraction"
+   SchDaySunRef = "RetailReceptacleSun"
+   SchDayMonRef = "RetailReceptacleWD"
+   SchDayTueRef = "RetailReceptacleWD"
+   SchDayWedRef = "RetailReceptacleWD"
+   SchDayThuRef = "RetailReceptacleWD"
+   SchDayFriRef = "RetailReceptacleWD"
+   SchDaySatRef = "RetailReceptacleSat"
+   SchDayHolRef = "RetailReceptacleSun"
+   SchDayClgDDRef = "OnDay"
+   SchDayHtgDDRef = "OffDay"
+   ..
+
+SchDay   "RetailReceptacleSun"  
+   Type = "Fraction"
+   Hr = ( 0.05, 0.05, 0.05, 0.05, 0.05, 0.05, 0.05, 0.05, 0.1, 0.1, 0.4, 
+          0.4, 0.6, 0.6, 0.6, 0.6, 0.6, 0.4, 0.2, 0.05, 0.05, 0.05, 0.05, 
+          0.05 )
+   ..
+
+SchDay   "RetailReceptacleWD"  
+   Type = "Fraction"
+   Hr = ( 0.05, 0.05, 0.05, 0.05, 0.05, 0.05, 0.05, 0.2, 0.5, 0.9, 0.9, 
+          0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.6, 0.6, 0.5, 0.2, 0.05, 
+          0.05 )
+   ..
+
+SchDay   "RetailReceptacleSat"  
+   Type = "Fraction"
+   Hr = ( 0.05, 0.05, 0.05, 0.05, 0.05, 0.05, 0.05, 0.1, 0.3, 0.6, 0.9, 
+          0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.5, 0.3, 0.3, 0.1, 0.05, 
+          0.05 )
+   ..
+
+Sch   "RetailRefrigeration"  
+   Type = "Fraction"
+   EndMonth[1] = 12
+   EndDay[1] = 31
+   SchWeekRef[1] = "RetailRefrigerationWk"
+   ..
+
+SchWeek   "RetailRefrigerationWk"  
+   Type = "Fraction"
+   SchDaySunRef = "RetailRefrigerationSun"
+   SchDayMonRef = "RetailRefrigerationWD"
+   SchDayTueRef = "RetailRefrigerationWD"
+   SchDayWedRef = "RetailRefrigerationWD"
+   SchDayThuRef = "RetailRefrigerationWD"
+   SchDayFriRef = "RetailRefrigerationWD"
+   SchDaySatRef = "RetailRefrigerationSat"
+   SchDayHolRef = "RetailRefrigerationSun"
+   SchDayClgDDRef = "RetailRefrigerationWD"
+   SchDayHtgDDRef = "RetailRefrigerationSun"
+   ..
+
+SchDay   "RetailRefrigerationSun"  
+   Type = "Fraction"
+   Hr = ( 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 
+          0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9 )
+   ..
+
+SchDay   "RetailRefrigerationWD"  
+   Type = "Fraction"
+   Hr = ( 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 
+          0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9 )
+   ..
+
+SchDay   "RetailRefrigerationSat"  
+   Type = "Fraction"
+   Hr = ( 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 
+          0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9 )
+   ..
+
+ConsAssm   "NACM Metal Framed Wall"  
+   CompatibleSurfType = "ExteriorWall"
+   MatRef[1] = "Stucco - 7/8 in."
+   MatRef[2] = "Building Paper - 1/16 in"
+   MatRef[3] = "Expanded Polystyrene - EPS - 4 1/16 in"
+   MatRef[4] = "Air - Metal Wall Framing - 16 or 24 in. OC"
+   MatRef[5] = "Gypsum Board - 1/2 in."
+   ..
+
+Mat   "Stucco - 7/8 in."  
+   CodeCat = "Plastering Materials"
+   CodeItem = "Stucco - 7/8 in."
+   ..
+
+Mat   "Compliance Insulation R13.99"  
+   CodeCat = "Insulation Board"
+   CodeItem = "Compliance Insulation R13.99"
+   ..
+
+Mat   "Air - Metal Wall Framing - 16 or 24 in. OC"  
+   CodeCat = "Air"
+   CodeItem = "Air - Metal Wall Framing - 16 or 24 in. OC"
+   ..
+
+Mat   "Gypsum Board - 1/2 in."  
+   CodeCat = "Bldg Board and Siding"
+   CodeItem = "Gypsum Board - 1/2 in."
+   ..
+
+ConsAssm   "NACM_Interior Wall"  
+   CompatibleSurfType = "InteriorWall"
+   MatRef[1] = "Gypsum Board - 1/2 in."
+   MatRef[2] = "Gypsum Board - 1/2 in."
+   ..
+
+Mat   "NACM_Gypsum Board 5/8in"  
+   CodeCat = "Bldg Board and Siding"
+   CodeItem = "Gypsum Board - 5/8 in."
+   ..
+
+ConsAssm   "NACM Slab Floor"  
+   CompatibleSurfType = "UndergroundFloor"
+   SlabType = "UnheatedSlabOnGrade"
+   SlabInsOrientation = "12inHorizontal"
+   SlabInsThrmlR = "R5"
+   ..
+
+FenCons   "Base_AllCZ_Skylt-Gl-CurbMntU58"  
+   FenType = "Skylight"
+   SkyltGlz = "Glass"
+   SkyltCurb = "CurbMounted"
+   SHGC = 0.25
+   UFactor = 0.58
+   VT = 0.49
+   ..
+
+SpcFuncDefaults   "Retail, Main Entry"  
+   SpcFunc = "Lobby, Main Entry"
+   ..
+
+FenCons   "Base_AllCZ_FixedWindowU36"  
+   FenType = "VerticalFenestration"
+   FenProdType = "FixedWindow"
+   SHGC = 0.25
+   UFactor = 0.36
+   VT = 0.42
+   ..
+
+FluidSys   "SHWFluidSys1"  
+   Type = "ServiceHotWater"
+   DsgnSupWtrTemp = 180
+   ..
+
+WtrHtr   "WaterHeater 1"  
+   FluidSegOutRef = "SHWSupply1"
+   FluidSegMakeupRef = "SHWMakeup1"
+   ..
+
+FluidSeg   "SHWSupply1"  
+   Type = "PrimarySupply"
+   ..
+
+FluidSeg   "SHWMakeup1"  
+   Type = "MakeupFluid"
+   Src = "MunicipalWater"
+   ..
+
+ConsAssm   "NACM Roof"  
+   CompatibleSurfType = "Roof"
+   CRRCProdID = "753159"
+   MatRef[1] = "Metal Standing Seam - 1/16 in."
+   MatRef[2] = "Expanded Polystyrene - EPS - 3 1/2 in"
+   MatRef[3] = "Gypsum Board - 1/2 in."
+   ..
+
+Mat   "Metal Standing Seam - 1/16 in."  
+   CodeCat = "Roofing"
+   CodeItem = "Metal Standing Seam - 1/16 in."
+   ..
+
+Mat   "Compliance Insulation R24.86"  
+   CodeCat = "Insulation Board"
+   CodeItem = "Compliance Insulation R24.86"
+   ..
+
+Sch   "AssemblyInfiltration"  
+   Type = "Fraction"
+   EndMonth[1] = 12
+   EndDay[1] = 31
+   SchWeekRef[1] = "AssemblyInfiltrationWk"
+   ..
+
+SchWeek   "AssemblyInfiltrationWk"  
+   Type = "Fraction"
+   SchDaySunRef = "AssemblyInfiltrationSun"
+   SchDayMonRef = "AssemblyInfiltrationWD"
+   SchDayTueRef = "AssemblyInfiltrationWD"
+   SchDayWedRef = "AssemblyInfiltrationWD"
+   SchDayThuRef = "AssemblyInfiltrationWD"
+   SchDayFriRef = "AssemblyInfiltrationWD"
+   SchDaySatRef = "AssemblyInfiltrationSat"
+   SchDayHolRef = "AssemblyInfiltrationSun"
+   SchDayClgDDRef = "AssemblyInfiltrationWD"
+   SchDayHtgDDRef = "AssemblyInfiltrationWD"
+   ..
+
+SchDay   "AssemblyInfiltrationSun"  
+   Type = "Fraction"
+   Hr = ( 1, 1, 1, 1, 1, 1, 1, 0.25, 0.25, 0.25, 0.25, 0.25, 0.25, 0.25, 
+          0.25, 0.25, 0.25, 0.25, 0.25, 0.25, 0.25, 0.25, 0.25, 1 )
+   ..
+
+SchDay   "AssemblyInfiltrationWD"  
+   Type = "Fraction"
+   Hr = ( 1, 1, 1, 1, 1, 1, 1, 0.25, 0.25, 0.25, 0.25, 0.25, 0.25, 0.25, 
+          0.25, 0.25, 0.25, 0.25, 0.25, 0.25, 0.25, 0.25, 0.25, 1 )
+   ..
+
+SchDay   "AssemblyInfiltrationSat"  
+   Type = "Fraction"
+   Hr = ( 1, 1, 1, 1, 1, 1, 1, 0.25, 0.25, 0.25, 0.25, 0.25, 0.25, 0.25, 
+          0.25, 0.25, 0.25, 0.25, 0.25, 0.25, 0.25, 0.25, 0.25, 1 )
+   ..
+
+Sch   "RetailInfiltration"  
+   Type = "Fraction"
+   EndMonth[1] = 12
+   EndDay[1] = 31
+   SchWeekRef[1] = "RetailInfiltrationWk"
+   ..
+
+SchWeek   "RetailInfiltrationWk"  
+   Type = "Fraction"
+   SchDaySunRef = "RetailInfiltrationSun"
+   SchDayMonRef = "RetailInfiltrationWD"
+   SchDayTueRef = "RetailInfiltrationWD"
+   SchDayWedRef = "RetailInfiltrationWD"
+   SchDayThuRef = "RetailInfiltrationWD"
+   SchDayFriRef = "RetailInfiltrationWD"
+   SchDaySatRef = "RetailInfiltrationSat"
+   SchDayHolRef = "RetailInfiltrationSun"
+   SchDayClgDDRef = "RetailInfiltrationWD"
+   SchDayHtgDDRef = "RetailInfiltrationWD"
+   ..
+
+SchDay   "RetailInfiltrationSun"  
+   Type = "Fraction"
+   Hr = ( 1, 1, 1, 1, 1, 1, 1, 1, 0.25, 0.25, 0.25, 0.25, 0.25, 0.25, 
+          0.25, 0.25, 0.25, 0.25, 0.25, 1, 1, 1, 1, 1 )
+   ..
+
+SchDay   "RetailInfiltrationWD"  
+   Type = "Fraction"
+   Hr = ( 1, 1, 1, 1, 1, 1, 0.25, 0.25, 0.25, 0.25, 0.25, 0.25, 0.25, 
+          0.25, 0.25, 0.25, 0.25, 0.25, 0.25, 0.25, 0.25, 1, 1, 1 )
+   ..
+
+SchDay   "RetailInfiltrationSat"  
+   Type = "Fraction"
+   Hr = ( 1, 1, 1, 1, 1, 1, 0.25, 0.25, 0.25, 0.25, 0.25, 0.25, 0.25, 
+          0.25, 0.25, 0.25, 0.25, 0.25, 0.25, 0.25, 0.25, 0.25, 1, 1 )
+   ..
+
+Sch   "AssemblyHeating"  
+   Type = "Temperature"
+   EndMonth[1] = 12
+   EndDay[1] = 31
+   SchWeekRef[1] = "AssemblyHeatingWk"
+   ..
+
+SchWeek   "AssemblyHeatingWk"  
+   Type = "Temperature"
+   SchDaySunRef = "AssemblyHeatingSun"
+   SchDayMonRef = "AssemblyHeatingWD"
+   SchDaySatRef = "AssemblyHeatingSat"
+   SchDayHtgDDRef = "AssemblyHeatingWD"
+   ..
+
+SchDay   "AssemblyHeatingSun"  
+   Type = "Temperature"
+   Hr = ( 60, 60, 60, 60, 60, 60, 70, 70, 70, 70, 70, 70, 70, 70, 70, 70, 
+          70, 70, 70, 70, 70, 70, 70, 60 )
+   ..
+
+SchDay   "AssemblyHeatingWD"  
+   Type = "Temperature"
+   Hr = ( 60, 60, 60, 60, 60, 70, 70, 70, 70, 70, 70, 70, 70, 70, 70, 70, 
+          70, 70, 70, 70, 70, 70, 70, 60 )
+   ..
+
+SchDay   "AssemblyHeatingSat"  
+   Type = "Temperature"
+   Hr = ( 60, 60, 60, 60, 60, 60, 70, 70, 70, 70, 70, 70, 70, 70, 70, 70, 
+          70, 70, 70, 70, 70, 70, 70, 60 )
+   ..
+
+Sch   "AssemblyCooling"  
+   Type = "Temperature"
+   EndMonth[1] = 12
+   EndDay[1] = 31
+   SchWeekRef[1] = "AssemblyCoolingWk"
+   ..
+
+SchWeek   "AssemblyCoolingWk"  
+   Type = "Temperature"
+   SchDaySunRef = "AssemblyCoolingSun"
+   SchDayMonRef = "AssemblyCoolingWD"
+   SchDaySatRef = "AssemblyCoolingSat"
+   SchDayHtgDDRef = "AssemblyCoolingWD"
+   ..
+
+SchDay   "AssemblyCoolingSun"  
+   Type = "Temperature"
+   Hr = ( 85, 85, 85, 85, 85, 85, 75, 75, 75, 75, 75, 75, 75, 75, 75, 75, 
+          75, 75, 75, 75, 75, 75, 75, 85 )
+   ..
+
+SchDay   "AssemblyCoolingWD"  
+   Type = "Temperature"
+   Hr = ( 85, 85, 85, 85, 85, 75, 75, 75, 75, 75, 75, 75, 75, 75, 75, 75, 
+          75, 75, 75, 75, 75, 75, 75, 85 )
+   ..
+
+SchDay   "AssemblyCoolingSat"  
+   Type = "Temperature"
+   Hr = ( 85, 85, 85, 85, 85, 85, 75, 75, 75, 75, 75, 75, 75, 75, 75, 75, 
+          75, 75, 75, 75, 75, 75, 75, 85 )
+   ..
+
+Sch   "RetailHeating"  
+   Type = "Temperature"
+   EndMonth[1] = 12
+   EndDay[1] = 31
+   SchWeekRef[1] = "RetailHeatingWk"
+   ..
+
+SchWeek   "RetailHeatingWk"  
+   Type = "Temperature"
+   SchDaySunRef = "RetailHeatingSun"
+   SchDayMonRef = "RetailHeatingWD"
+   SchDaySatRef = "RetailHeatingSat"
+   SchDayClgDDRef = "RetailHeatingSummDD"
+   SchDayHtgDDRef = "RetailHeatingWD"
+   ..
+
+SchDay   "RetailHeatingSun"  
+   Type = "Temperature"
+   Hr = ( 60, 60, 60, 60, 60, 60, 60, 60, 70, 70, 70, 70, 70, 70, 70, 70, 
+          70, 60, 60, 60, 60, 60, 60, 60 )
+   ..
+
+SchDay   "RetailHeatingWD"  
+   Type = "Temperature"
+   Hr = ( 60, 60, 60, 60, 60, 60, 70, 70, 70, 70, 70, 70, 70, 70, 70, 70, 
+          70, 70, 70, 70, 70, 60, 60, 60 )
+   ..
+
+SchDay   "RetailHeatingSat"  
+   Type = "Temperature"
+   Hr = ( 60, 60, 60, 60, 60, 60, 70, 70, 70, 70, 70, 70, 70, 70, 70, 70, 
+          70, 70, 70, 70, 70, 70, 60, 60 )
+   ..
+
+SchDay   "RetailHeatingSummDD"  
+   Type = "Temperature"
+   Hr = ( 60, 60, 60, 60, 60, 60, 60, 60, 60, 60, 60, 60, 60, 60, 60, 60, 
+          60, 60, 60, 60, 60, 60, 60, 60 )
+   ..
+
+Sch   "RetailCooling"  
+   Type = "Temperature"
+   EndMonth[1] = 12
+   EndDay[1] = 31
+   SchWeekRef[1] = "RetailCoolingWk"
+   ..
+
+SchWeek   "RetailCoolingWk"  
+   Type = "Temperature"
+   SchDaySunRef = "RetailCoolingSun"
+   SchDayMonRef = "RetailCoolingWD"
+   SchDaySatRef = "RetailCoolingSat"
+   SchDayHtgDDRef = "RetailCoolingWinDD"
+   ..
+
+SchDay   "RetailCoolingSun"  
+   Type = "Temperature"
+   Hr = ( 85, 85, 85, 85, 85, 85, 85, 85, 75, 75, 75, 75, 75, 75, 75, 75, 
+          75, 85, 85, 85, 85, 85, 85, 85 )
+   ..
+
+SchDay   "RetailCoolingWD"  
+   Type = "Temperature"
+   Hr = ( 85, 85, 85, 85, 85, 85, 75, 75, 75, 75, 75, 75, 75, 75, 75, 75, 
+          75, 75, 75, 75, 75, 85, 85, 85 )
+   ..
+
+SchDay   "RetailCoolingSat"  
+   Type = "Temperature"
+   Hr = ( 85, 85, 85, 85, 85, 85, 75, 75, 75, 75, 75, 75, 75, 75, 75, 75, 
+          75, 75, 75, 75, 75, 75, 85, 85 )
+   ..
+
+SchDay   "RetailCoolingWinDD"  
+   Type = "Temperature"
+   Hr = ( 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 
+          85, 85, 85, 85, 85, 85, 85, 85 )
+   ..
+
+Mat   "Building Paper - 1/16 in"  
+   CodeCat = "Building Membrane"
+   CodeItem = "Building Paper - 1/16 in."
+   ..
+
+Mat   "Expanded Polystyrene - EPS - 4 1/16 in"  
+   CodeCat = "Insulation Board"
+   CodeItem = "Expanded Polystyrene - EPS - 4 1/16 in."
+   ..
+
+Mat   "Expanded Polystyrene - EPS - 3 1/2 in"  
+   CodeCat = "Insulation Board"
+   CodeItem = "Expanded Polystyrene - EPS - 3 1/2 in."
+   ..
+
+Sch   "RetailHVACAvail"  
+   Type = "OnOff"
+   EndMonth[1] = 12
+   EndDay[1] = 31
+   SchWeekRef[1] = "RetailHVACAvailWk"
+   ..
+
+SchWeek   "RetailHVACAvailWk"  
+   Type = "OnOff"
+   SchDaySunRef = "RetailHVACAvailSun"
+   SchDayMonRef = "RetailHVACAvailWD"
+   SchDayTueRef = "RetailHVACAvailWD"
+   SchDayWedRef = "RetailHVACAvailWD"
+   SchDayThuRef = "RetailHVACAvailWD"
+   SchDayFriRef = "RetailHVACAvailWD"
+   SchDaySatRef = "RetailHVACAvailSat"
+   SchDayHolRef = "RetailHVACAvailSun"
+   SchDayClgDDRef = "OnDay"
+   SchDayHtgDDRef = "OnDay"
+   ..
+
+SchDay   "RetailHVACAvailSun"  
+   Type = "OnOff"
+   Hr = ( 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 
+          0, 0, 0 )
+   ..
+
+SchDay   "RetailHVACAvailWD"  
+   Type = "OnOff"
+   Hr = ( 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+          0, 0, 0 )
+   ..
+
+SchDay   "RetailHVACAvailSat"  
+   Type = "OnOff"
+   Hr = ( 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+          1, 0, 0 )
+   ..
+
+EUseSummary   "EUseSummary"  
+   Title1[2] = "Proposed"
+   Title1[3] = "Proposed"
+   Title1[4] = "Proposed"
+   Title1[5] = "Standard"
+   Title1[6] = "Standard"
+   Title1[7] = "Standard"
+   Title1[8] = "Compliance"
+   Title2[2] = "Design"
+   Title2[3] = "Design"
+   Title2[4] = "Design"
+   Title2[5] = "Design"
+   Title2[6] = "Design"
+   Title2[7] = "Design"
+   Title2[8] = "Margin"
+   Title3[1] = "End Use"
+   Title3[2] = "Site (MWh)"
+   Title3[3] = "Site (therms)"
+   Title3[4] = "(kTDV/ft²-yr)"
+   Title3[5] = "Site (MWh)"
+   Title3[6] = "Site (therms)"
+   Title3[7] = "(kTDV/ft²-yr)"
+   Title3[8] = "(kTDV/ft²-yr)"
+   Enduse1[1] = "Space Heating"
+   Enduse1[2] = "--"
+   Enduse1[3] = "2,379"
+   Enduse1[4] = "17.9"
+   Enduse1[5] = "0.0"
+   Enduse1[6] = "3,621"
+   Enduse1[7] = "26.9"
+   Enduse1[8] = "9.0"
+   Enduse2[1] = "Space Cooling"
+   Enduse2[2] = "29.4"
+   Enduse2[3] = "--"
+   Enduse2[4] = "57.6"
+   Enduse2[5] = "31.2"
+   Enduse2[6] = "--"
+   Enduse2[7] = "58.1"
+   Enduse2[8] = "0.5"
+   Enduse3[1] = "Indoor Fans"
+   Enduse3[2] = "78.9"
+   Enduse3[3] = "--"
+   Enduse3[4] = "76.1"
+   Enduse3[5] = "19.8"
+   Enduse3[6] = "--"
+   Enduse3[7] = "21.7"
+   Enduse3[8] = "-54.4"
+   Enduse4[1] = "Heat Rejection"
+   Enduse4[2] = "--"
+   Enduse4[3] = "--"
+   Enduse4[4] = "--"
+   Enduse4[5] = "--"
+   Enduse4[6] = "--"
+   Enduse4[7] = "--"
+   Enduse4[8] = "--"
+   Enduse5[1] = "Pumps & Misc."
+   Enduse5[2] = "--"
+   Enduse5[3] = "--"
+   Enduse5[4] = "--"
+   Enduse5[5] = "2.5"
+   Enduse5[6] = "--"
+   Enduse5[7] = "1.8"
+   Enduse5[8] = "1.8"
+   Enduse6[1] = "Domestic HW"
+   Enduse6[2] = "--"
+   Enduse6[3] = "2,327"
+   Enduse6[4] = "15.6"
+   Enduse6[5] = "--"
+   Enduse6[6] = "2,327"
+   Enduse6[7] = "15.6"
+   Enduse6[8] = "--"
+   Enduse7[1] = "Lighting"
+   Enduse7[2] = "94.2"
+   Enduse7[3] = "--"
+   Enduse7[4] = "96.0"
+   Enduse7[5] = "94.2"
+   Enduse7[6] = "--"
+   Enduse7[7] = "96.0"
+   Enduse7[8] = "--"
+   Enduse8[1] = "Compliance Total"
+   Enduse8[2] = "202.5"
+   Enduse8[3] = "4,706"
+   Enduse8[4] = "263.2"
+   Enduse8[5] = "147.7"
+   Enduse8[6] = "5,948"
+   Enduse8[7] = "220.1"
+   Enduse8[8] = "-43.1"
+   Enduse9[1] = "Receptacle"
+   Enduse9[2] = "77.7"
+   Enduse9[3] = "--"
+   Enduse9[4] = "79.4"
+   Enduse9[5] = "77.7"
+   Enduse9[6] = "--"
+   Enduse9[7] = "79.4"
+   Enduse10[1] = "Process"
+   Enduse10[2] = "--"
+   Enduse10[3] = "--"
+   Enduse10[4] = "--"
+   Enduse10[5] = "--"
+   Enduse10[6] = "--"
+   Enduse10[7] = "--"
+   Enduse11[1] = "Process Ltg"
+   Enduse11[2] = "--"
+   Enduse11[3] = "--"
+   Enduse11[4] = "--"
+   Enduse11[5] = "--"
+   Enduse11[6] = "--"
+   Enduse11[7] = "--"
+   Enduse12[1] = "TOTAL"
+   Enduse12[2] = "280.2"
+   Enduse12[3] = "4,706"
+   Enduse12[4] = "342.6"
+   Enduse12[5] = "225.4"
+   Enduse12[6] = "5,948"
+   Enduse12[7] = "299.5"
+   ZoneUMLHsLoaded = ( 1, 1 )
+   ZoneUMLHs = ( 
+                 "clg: 0  htg: 0  'Back_Space Thermal Zone'
+clg: 0  htg: 0  'Core_Retail Thermal Zone'
+clg: 2  htg: 1  'Front_Retail Thermal Zone'
+clg: 3  htg: 1  'Point_Of_Sale Thermal Zone'
+clg: 0  htg: 0  'Front_Entry Thermal Zone'", 
+                 "clg: 0  htg: 7  'Back_Space Thermal Zone'
+clg: 0  htg: 4  'Core_Retail Thermal Zone'
+clg: 0  htg: 4  'Front_Retail Thermal Zone'
+clg: 0  htg: 4  'Point_Of_Sale Thermal Zone'
+clg: 0  htg: 0  'Front_Entry Thermal Zone'" )
+   SimSummary[1] = "Successful (94 warnings)"
+   SimSummary[3] = "Successful (4 severe errors, 87 warnings)"
+   PassFail = "FAIL"
+   ..
+
+
+END_OF_FILE
