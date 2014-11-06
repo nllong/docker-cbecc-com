@@ -1,6 +1,6 @@
 # CBECC-Com using Docker & Wine
 
-This container runs (CBECC-com)[http://bees.archenergy.com/software.html] using
+This container runs [CBECC-com](http://bees.archenergy.com/software.html) using
 Docker and Wine. This is the base image for other images such as the VNC based image.
 
 ## Pulling from Docker Hub
