@@ -23,6 +23,4 @@ docker run -it --rm -v $(pwd)/run:/var/cbecc-com-files/run cbecc-com-service /bi
 
 ## Testing on Windows
 
-$ python RunCbeccCom.py -i run/0200016-OffSml-SG-BaseRun.xmlpy
-
-
+$ python RunCbeccCom.py -s windows -i run/0200016-OffSml-SG-BaseRun.xml
