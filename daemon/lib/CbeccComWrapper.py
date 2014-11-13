@@ -185,7 +185,7 @@ class CbeccComWrapper():
 
         # format the result as a string
         # TODO: Catch any exceptions and/or timeouts
-        result = "{" + str(result) + ": \"" + CbeccComWrapper.ERROR_CODES[result] + "\"}"
+        result = "{\"" + str(result) + "\": \"" + CbeccComWrapper.ERROR_CODES[result] + "\"}"
 
         with open(pszProcessingPath + "\\CbeccComWrapper.json", "w") as text_file:
             text_file.write(result)
