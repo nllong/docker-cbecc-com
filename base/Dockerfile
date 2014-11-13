@@ -29,4 +29,3 @@ RUN curl -SLO $CBECC_DOWNLOAD_URL
 RUN xvfb-run -a wine CBECC-Com_2013-3_Setup.exe /S
 
 WORKDIR /var/cbecc-com-files
-ADD . /var/cbecc-com-files
