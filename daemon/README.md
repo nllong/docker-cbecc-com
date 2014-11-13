@@ -3,12 +3,13 @@
 
 ## Running Example via Docker
 
-```
-docker run -it --rm -p 5900:5900 -v $(pwd)/run:/var/cbecc-com-files/run cbecc-com-service /var/cbecc-com-files/run.sh -i /var/cbecc-com-files/run/0200016-OffSml-SG-BaseRun.xml
-```
+T o use the Docker image to run an CIBD or XML modelFirst, first pull down the docker image `docker pull nllong/cbecc-com:daemon`
 
-## Running Another File
+`cd` into the directory where the file is. (Make sure that you have a recent boot2docker running.
 
+```
+docker run -it --rm -v "$(pwd)":/var/cbecc-com-files/run cbecc-com-service /var/cbecc-com-files/run.sh -i /var/cbecc-com-files/run/<filename>
+```
 
 ## Testing on Docker/Wine
 
