@@ -1,7 +1,5 @@
 __author__ = 'Nicholas Long'
 
-#
-
 """
 Reference manual is here:
     http://bees.archenergy.com/Documents/Software/CEC_Compliance_Manager_(com)_software_documentation_v9b.pdf
@@ -41,7 +39,7 @@ const char* pszAnalysisOptionsCSV: Default Value
 
 from ctypes import cdll
 from os.path import expanduser
-import os
+import os, json
 
 
 class CbeccComWrapper():
@@ -183,12 +181,11 @@ class CbeccComWrapper():
                                                         pszAnalysisOptionsCSV, pszErrorMessage, iErrorMsgLength,
                                                         bDisplayProgress, hWnd, pszResultsSummary, iResultsSummaryLen)
 
-        # format the result as a string
         # TODO: Catch any exceptions and/or timeouts
-        result = "{\"" + str(result) + "\": \"" + CbeccComWrapper.ERROR_CODES[result] + "\"}"
+        result = { result: CbeccComWrapper.ERROR_CODES[result] }
 
-        with open(pszProcessingPath + "\\CbeccComWrapper.json", "w") as text_file:
-            text_file.write(result)
+        with open(pszProcessingPath + "\\CbeccComWrapper.json", "w") as outfile:
+            json.dump(result, outfile)
 
         return result
 
