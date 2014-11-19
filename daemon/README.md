@@ -3,7 +3,7 @@
 
 ## Running Example via Docker
 
-To use the Docker image to run an CIBD or XML modelFirst, first pull down the docker image `docker pull nllong/cbecc-com:daemon`
+To use the Docker image to run an CIBD or XML modelFirst, first pull down the docker image `docker pull nllong/cbecc-com:daemon`. Builds are managed via [Docker Hub's Automated Builds](https://registry.hub.docker.com/u/nllong/cbecc-com/)
 
 `cd` into the directory where the file is. (Make sure that you have a recent version of boot2docker running.)
 
