@@ -1,4 +1,4 @@
-FROM nllong/cbecc-com
+FROM nllong/cbecc-com:3
 MAINTAINER Nicholas Long <nicholas.long@nrel.gov>
 
 # Install Python for Windows
