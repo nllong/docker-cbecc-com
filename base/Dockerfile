@@ -22,10 +22,11 @@ RUN curl -SLO http://downloads.sourceforge.net/wine/wine-mono-$MONO_VERSION.msi 
 RUN apt-get autoclean -y
 
 # Install CBECC Com -- Have to call xvfb because the silent install still shows a dialog when it is verifying files
-ENV CBECC_DOWNLOAD_URL http://bees.archenergy.com/Documents/Software/CBECC-Com_2013-3_Setup.exe
+ENV CBECC_COM_VERSION 3
+ENV CBECC_DOWNLOAD_URL http://bees.archenergy.com/Documents/Software/CBECC-Com_2013-$CBECC_COM_VERSION_Setup.exe
 RUN curl -SLO $CBECC_DOWNLOAD_URL
 
 # have to call xvfb because the silent install still shows a dialog when it is verifying files
-RUN xvfb-run -a wine CBECC-Com_2013-3_Setup.exe /S
+RUN xvfb-run -a wine CBECC-Com_2013-$CBECC_COM_VERSION_Setup.exe /S
 
 WORKDIR /var/cbecc-com-files
