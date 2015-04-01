@@ -14,7 +14,9 @@ $ python RunCbeccCom.py -i run/0200016-OffSml-SG-BaseRun.xml -o "{
 The simulation will run in the same directory as the model.
 """
 
-import sys, getopt, json
+import sys
+import getopt
+
 from lib.CbeccComWrapper import CbeccComWrapper
 
 
