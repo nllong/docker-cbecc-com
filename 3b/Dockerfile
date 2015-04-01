@@ -1,7 +1,6 @@
 FROM ubuntu:14.04
 MAINTAINER Nicholas Long <nicholas.long@nrel.gov>
 
-#### START COPIED CBECC-COM CORE BUILD
 RUN dpkg --add-architecture i386 && \
     apt-get update && \
     apt-get install -yq curl xvfb software-properties-common python-software-properties && \
@@ -35,19 +34,3 @@ RUN curl -SLO $CBECC_DOWNLOAD_URL && \
     rm -f CBECC-Com_2013-${CBECC_COM_VERSION}_Setup.exe
 
 WORKDIR /var/cbecc-com-files
-### END CBECC-COM CORE
-
-# Install LXDE and VNC server.
-RUN DEBIAN_FRONTEND=noninteractive apt-get install -y lxde-core lxterminal x11vnc firefox
-
-# VNC server setup
-RUN mkdir -p ~/.vnc && x11vnc -storepasswd password ~/.vnc/passwd
-RUN bash -c 'echo "firefox" >> /.bashrc'
-
-# RUN xvfb-run -a wine CBECC-Com_2013-${CBECC_COM_VERSION}_Setup.exe /S
-
-EXPOSE 5900
-
-
-
-

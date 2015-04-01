@@ -1,15 +1,11 @@
 # CBECC-Com using Docker & Wine - with VNC
 
-Uses CBECC-Com base image with a VNC server for GUI access
-
-## Pulling from Docker Hub
-
-Not yet published
+Uses CBECC-Com base image with a VNC server for GUI access. This is used for testing when upgrading to new versions of CBECC-Com
 
 ## Building from Docker File
 
 ```
-docker build -t nllong/cbecc-com:vnc .
+docker build -t cbecc-vnc .
 ```
 
 ## Running Containter
@@ -17,16 +13,16 @@ docker build -t nllong/cbecc-com:vnc .
 * Inspecting Container
 
 ```
-docker run -it --rm nllong/cbecc-com /bin/bash
+docker run -it --rm cbecc-vnc /bin/bash
 ```
-* Running CBECC Com Daemon
 
-Not yet implemented
-
-* VNC
+* Running VNC Server
 
 ```
-docker run -it --rm -p 5900:5900 cbecc-desktop x11vnc -forever -usepw -create
+docker run -it --rm -p 5900:5900 -v $(pwd)/test:/var/cbecc-com-files cbecc-desktop bash
+x11vnc -forever -usepw -create
+
+# Connect to VNC via the boot2docker IP address
 
 # In container you can start CBECC-Com by calling
 wine /root/.wine/drive_c/Program\ Files/CBECC-Com\ 2013/CBECC-Com13.exe
