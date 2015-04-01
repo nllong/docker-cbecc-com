@@ -33,4 +33,17 @@ RUN curl -SLO $CBECC_DOWNLOAD_URL && \
     xvfb-run -a wine CBECC-Com_2013-${CBECC_COM_VERSION}_Setup.exe /S && \
     rm -f CBECC-Com_2013-${CBECC_COM_VERSION}_Setup.exe
 
+# Install Python for Windows
+ENV PYTHON_INSTALL_VERSION 2.7.8
+
+RUN curl -SLO https://www.python.org/ftp/python/$PYTHON_INSTALL_VERSION/python-$PYTHON_INSTALL_VERSION.msi && \
+    wine msiexec /i python-$PYTHON_INSTALL_VERSION.msi ALLUSERS=1 && \
+    rm -f python-$PYTHON_INSTALL_VERSION.msi
+
+# Add in the SH file to execute the script.  Eventually make this the python script directly
+ADD run.sh /var/cbecc-com-files/run.sh
+RUN chmod +x /var/cbecc-com-files/run.sh
+ADD lib /var/cbecc-com-files/lib
+ADD RunCbeccCom.py /var/cbecc-com-files/RunCbeccCom.py
+
 WORKDIR /var/cbecc-com-files
