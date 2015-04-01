@@ -5,7 +5,9 @@ Docker and Wine. This is the base image for other images such as the VNC based i
 
 ## Pulling from Docker Hub
 
-Not yet published
+```
+docker pull nllong/cbecc-com:3
+```
 
 ## Building from Docker File
 
@@ -13,7 +15,7 @@ Not yet published
 docker build -t nllong/cbecc-com .
 ```
 
-## Running Containter
+## Running Container
 
 * Inspecting Container
 
@@ -21,6 +23,17 @@ docker build -t nllong/cbecc-com .
 docker run -it --rm nllong/cbecc-com /bin/bash
 ```
 
+* Running a CBECC COM file for testing
+
+```
+docker run -it --rm -v $(pwd)/cbecc-test-inputs:/var/cbecc-com-files/run/  nllong/cbecc-com /bin/bash /var/cbecc-com-files/daemon/run.sh -i /var/cbecc-com-files/run
+
+/var/cbecc-com-files/run.sh -i /var/cbecc-com-files/run
+
+
 * Running CBECC Com Daemon
 
 Not yet implemented
+
+
+## Running test files
