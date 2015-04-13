@@ -114,15 +114,24 @@ class CbeccComWrapper():
         181: "User aborted analysis during building model simulation"
     }
 
-    def __init__(self, docker, cbeccFilename, options):
+    def __init__(self, docker, cbeccFilename, analysisOptions):
         """ Configure the defaults based on the type the system configurations"""
         self.docker = docker
 
         # take the options and merge them with the defaults
-        self.options = dict(self.getDefaults(docker).items() + options.items())
+        self.options = dict(self.getDefaults(docker).items())
+
+        # override the pszAnalysisOptions if options is passed in (note that this completely overrides the defaults -- no merging).
+        if analysisOptions:
+            self.options["pszAnalysisOptionsCSV"] = analysisOptions
 
         # The CBECC Filename has to be backslashes!
         self.cbeccFilename = os.path.realpath(cbeccFilename).replace("/", "\\")
+
+        print "[CbeccComWrapper.py] Docker: {}".format(self.docker)
+        print "[CbeccComWrapper.py] CbeccFilename: {}".format(self.cbeccFilename)
+        print "[CbeccComWrapper.py] All options: {}".format(self.options)
+        print "[CbeccComWrapper.py] pszAnalysisOptionsCSV: {}".format(self.options["pszAnalysisOptionsCSV"])
 
         self.validateConfig()
 
