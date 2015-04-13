@@ -24,7 +24,6 @@ from lib.CbeccComWrapper import CbeccComWrapper
 def main(argv):
     inputfile = ''
     system = 'docker'
-    options = {}
 
     parser = argparse.ArgumentParser(prog='RunCbeccCom.py')
     parser.add_argument('-i', '--input',  type=str, help='input file name', required=True)
@@ -34,7 +33,10 @@ def main(argv):
     args = parser.parse_args()
     print "[RunCbeccCom.py] Arguments are {}".format(args)
 
-    ccw = CbeccComWrapper(args.system == 'docker', inputfile, args.options)
+    if args.system:
+        system = args.system
+
+    ccw = CbeccComWrapper(system == 'docker', inputfile, args.options)
     result = ccw.run()
     ccw.finalize()
 
