@@ -7,6 +7,7 @@ Arguments:
     -i : input file (either the XML or the CBID)
     -o : A string of options that will override the defaults in the CbeccComWrapper.py file.
          For example to run with program defaults and AnalysisStorage level 3 do '-o AnalysisStorage,3'
+         'None' is a reserved word to remove all the default options and use the CBECC program defaults.
     -s : Type of system. This is only 'docker' or blank. Blank assumes Windows at the moment.
 
 Example usage:
@@ -32,6 +33,9 @@ def main(argv):
 
     args = parser.parse_args()
     print "[RunCbeccCom.py] Arguments are {}".format(args)
+
+    if args.options and args.options.lower() == 'none':
+        args.options = "none"
 
     if args.system:
         system = args.system

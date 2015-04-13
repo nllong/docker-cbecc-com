@@ -123,7 +123,10 @@ class CbeccComWrapper():
 
         # override the pszAnalysisOptions if options is passed in (note that this completely overrides the defaults -- no merging).
         if analysisOptions:
-            self.options["pszAnalysisOptionsCSV"] = analysisOptions
+            if analysisOptions == 'none':
+                self.options["pszAnalysisOptionsCSV"] = ""
+            else:
+                self.options["pszAnalysisOptionsCSV"] = analysisOptions
 
         # The CBECC Filename has to be backslashes!
         self.cbeccFilename = os.path.realpath(cbeccFilename).replace("/", "\\")
