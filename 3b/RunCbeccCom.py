@@ -23,7 +23,6 @@ from lib.CbeccComWrapper import CbeccComWrapper
 
 
 def main(argv):
-    inputfile = ''
     system = 'docker'
 
     parser = argparse.ArgumentParser(prog='RunCbeccCom.py')
@@ -40,7 +39,7 @@ def main(argv):
     if args.system:
         system = args.system
 
-    ccw = CbeccComWrapper(system == 'docker', inputfile, args.options)
+    ccw = CbeccComWrapper(system == 'docker', args.input, args.options)
     result = ccw.run()
     ccw.finalize()
 
