@@ -239,5 +239,5 @@ class CbeccComWrapper():
             options["cbeccUserRoot"] = expanduser("~") + "\\My Documents\\CBECC-Com 2013 Data"
             options["rulesPath"] = options["cbeccUserRoot"] + "\\Rulesets\\CEC 2013 Nonres\\CEC 2013 NonRes BEMBase.bin"
 
-        options["pszAnalysisOptionsCSV"] = "Verbose,1,Silent,1,ComplianceReportPDF,1,ComplianceReportXML,1,BypassInputChecks,1"
+        options["pszAnalysisOptionsCSV"] = "Verbose,1,Silent,1,ComplianceReportPDF,1,ComplianceReportXML,1,"
         return options
